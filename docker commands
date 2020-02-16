@@ -1,0 +1,5 @@
+docker commands
+
+
+# To get inside running container
+	docker exec -it b56fa0d76d5c bash
