@@ -1,5 +1,34 @@
-docker commands
+some docker and flask commands
 
 
 # To get inside running container
-	docker exec -it b56fa0d76d5c bash
+docker exec -it b56fa0d76d5c bash
+	
+# Hitting flask API in POST
+curl -H "Content-Type:application/json" -X POST -d '{"input_file_path":"inputs/Store_POS.csv"}' http://localhost:5000/autoEDA
+
+# To create requirements.txt using pipreqs package
+pipreqs /user/flaskAPP          # /user/flaskAPP is the folder containing the scripts for whome you want to generate requirements.txt
+pipreqs /user/flaskAPP --pypi-server http://infynp.ad.infosys.com/repository/pypi-all/simple      # Using custom proxy server
+
+# To build from Dockerfile when Dockerfile is in current directory. dot(.) signifies current directory
+docker build . -t "name_of_image"
+docker build . -t flaskapp:latest     #name:version
+
+
+# Run container having flask APP
+docker run -p localhost:5001:5000 image_id
+	
+	localhost is not necessary. you can use 5001:5000 only also
+	-d which detatches from the run. This means you won’t see any output. 
+	   You can remove the -d if you would like to see the run process.
+	-p which specifies the port it is going to run on
+
+# remove container
+docker rm 91f3410eca7a --force
+
+# stop container
+docker kill 9701eed5868d
+
+# remove image
+docker rmi image_id/image_name --force
