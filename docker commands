@@ -32,3 +32,6 @@ docker kill 9701eed5868d
 
 # remove image
 docker rmi image_id/image_name --force
+
+# To push to Docker HUB
+https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html
