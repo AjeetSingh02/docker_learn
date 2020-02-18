@@ -38,7 +38,7 @@ https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html
 
 # To save as tar file
 docker save imagename > imagename.tar
-docker save imagename > imagename.tar.gz
+docker save pythonsmall:1 | gzip > pythonsmall.tar.gz
 https://docs.docker.com/engine/reference/commandline/save/
 
 # Downloading from GCP cloudshell
