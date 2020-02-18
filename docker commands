@@ -42,4 +42,5 @@ docker save pythonsmall:1 | gzip > pythonsmall.tar.gz
 https://docs.docker.com/engine/reference/commandline/save/
 
 # Downloading from GCP cloudshell
+cloudshell download filename
 https://cloud.google.com/shell/docs/uploading-and-downloading-files
