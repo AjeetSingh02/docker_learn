@@ -35,3 +35,11 @@ docker rmi image_id/image_name --force
 
 # To push to Docker HUB
 https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html
+
+# To save as tar file
+docker save imagename > imagename.tar
+docker save imagename > imagename.tar.gz
+https://docs.docker.com/engine/reference/commandline/save/
+
+# Downloading from GCP cloudshell
+https://cloud.google.com/shell/docs/uploading-and-downloading-files
