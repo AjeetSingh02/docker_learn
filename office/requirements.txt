@@ -1,2 +1,10 @@
 phik==0.9.9
 pyod==0.7.7.1
+simplejson==3.16.0
+numpy==1.18.1
+matplotlib==3.0.3
+scipy==1.1.0
+seaborn==0.9.0
+pandas==1.0.1
+confuse==1.0.0
+Flask==1.1.1
