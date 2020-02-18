@@ -46,5 +46,4 @@ cloudshell download filename
 https://cloud.google.com/shell/docs/uploading-and-downloading-files
 
 # Mount volume
-docker run -v /home/awb_user/s2i_test/autoeda:/workdir -p 5052:5000 autoeda:008
-
+docker run -v /home/awb_user/ajeet/mount_volume:/workdir/mount -p 5053:5053 flaskapp:1
