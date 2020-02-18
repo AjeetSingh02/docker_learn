@@ -44,3 +44,6 @@ https://docs.docker.com/engine/reference/commandline/save/
 # Downloading from GCP cloudshell
 cloudshell download filename
 https://cloud.google.com/shell/docs/uploading-and-downloading-files
+
+docker run -v /home/awb_user/s2i_test/autoeda:/workdir -p 5052:5000 autoeda:008
+
