@@ -41,6 +41,6 @@ However, capturing these as a Dockerfile allows you to do the same thing inside 
 
 
 
-http://github.com - automatic!
-[GitHub](http://github.com)
+For more information: http://github.com
+
 
