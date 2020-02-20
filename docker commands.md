@@ -25,9 +25,9 @@
 * Run container having flask APP
 	* docker run -p localhost:5001:5000 image_id
 	
-> localhost is not necessary. you can use 5001:5000 only also
--d which detatches from the run. This means you won’t see any output. You can remove the -d if you would like to see the run process.
--p which specifies the port it is going to run on
+_localhost is not necessary. you can use 5001:5000 only also.
+-d detatches from the run. This means you won’t see any output. You can remove the -d if you would like to see the run process.
+-p which specifies the port it is going to run on_
 
 * Remove container
 	* docker rm 91f3410eca7a --force
