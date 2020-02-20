@@ -26,10 +26,7 @@ Note: This file is named as .py file just to make it more readable.
 
 # Copy the rest of your app's source code from your host to your image filesystem.
   - COPY . .
-    
-    
-    
-    
+      
     
  '''
  
