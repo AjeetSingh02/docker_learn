@@ -1,8 +1,7 @@
 some docker and flask commands
 
-- To check docker version
-
-docker --version
+* To check docker version
+	* docker --version
 
 - To check all images
 docker image ls 
