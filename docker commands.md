@@ -18,38 +18,37 @@
 	* pipreqs /user/flaskAPP          # /user/flaskAPP is the folder containing the scripts for whome you want to generate requirements.txt
 	* pipreqs /user/flaskAPP --pypi-server http://infynp.ad.infosys.com/repository/pypi-all/simple      # Using custom proxy server
 
-- To build from Dockerfile when Dockerfile is in current directory. dot(.) signifies current directory
-docker build . -t "name_of_image"
-docker build . -t flaskapp:latest     #name:version
+* To build from Dockerfile when Dockerfile is in current directory. dot(.) signifies current directory
+	* docker build . -t "name_of_image"
+	* docker build . -t imagename:tag     
 
-- Run container having flask APP
-docker run -p localhost:5001:5000 image_id
+* Run container having flask APP
+	* docker run -p localhost:5001:5000 image_id
 	
-	localhost is not necessary. you can use 5001:5000 only also
-	-d which detatches from the run. This means you won’t see any output. 
-	   You can remove the -d if you would like to see the run process.
-	-p which specifies the port it is going to run on
+> localhost is not necessary. you can use 5001:5000 only also
+-d which detatches from the run. This means you won’t see any output. You can remove the -d if you would like to see the run process.
+-p which specifies the port it is going to run on
 
-- Remove container
-docker rm 91f3410eca7a --force
+* Remove container
+	* docker rm 91f3410eca7a --force
 
-- Stop container
-docker kill 9701eed5868d
+* Stop container
+	* docker kill 9701eed5868d
 
-- Remove image
-docker rmi image_id/image_name --force
+* Remove image
+	* docker rmi image_id/image_name --force
 
-- To push to Docker HUB
-https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html
+* To push to Docker HUB
+	* https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html
 
-- To save as tar file
-docker save imagename > imagename.tar
-docker save pythonsmall:1 | gzip > pythonsmall.tar.gz
-https://docs.docker.com/engine/reference/commandline/save/
+* To save as tar file
+	* docker save imagename > imagename.tar
+	* docker save pythonsmall:1 | gzip > pythonsmall.tar.gz
+	* For more info: https://docs.docker.com/engine/reference/commandline/save/
 
-- Downloading from GCP cloudshell
-cloudshell download filename
-https://cloud.google.com/shell/docs/uploading-and-downloading-files
+* Downloading from GCP cloudshell
+	* cloudshell download filename
+	* For more info: https://cloud.google.com/shell/docs/uploading-and-downloading-files
 
-- Mount volume
-docker run -v /home/awb_user/ajeet/mount_volume:/workdir/mount -p 5053:5053 flaskapp:1
+* Mount volume
+	* docker run -v /home/awb_user/ajeet/mount_volume:/workdir/mount -p 5053:5053 flaskapp:1
