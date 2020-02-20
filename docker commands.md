@@ -22,7 +22,7 @@
 	* docker build . -t "name_of_image"
 	* docker build . -t imagename:tag     
 
-* Run container having flask APP
+* Run container
 	* docker run -p localhost:5001:5000 image_id
 	* docker run --publish 8000:8080 --detach --name containername imagename:tag
 	* docker container run --publish 8000:8080 --detach --name containername imagename:tag
@@ -42,9 +42,11 @@
 	* docker rmi image_id/image_name --force
 
 * To push to Docker HUB
-	* Step1: docker image tag imagename:tag dockerid/repositoryname:tag
-	* Step2: docker image push dockerid/repositoryname:tag
-		* For more info: https://docs.docker.com/get-started/part3/
+	* Step1: Images must be namespaced correctly to share on Docker Hub. Specifically, you must name images like <Docker ID>/<Repository Name>:<tag>
+		* docker image tag imagename:tag dockerid/repositoryname:tag
+	* Step2: push your image to Docker Hub
+		* docker image push dockerid/repositoryname:tag
+	* For more info: https://docs.docker.com/get-started/part3/
 
 * To save as tar file
 	* docker save imagename > imagename.tar
