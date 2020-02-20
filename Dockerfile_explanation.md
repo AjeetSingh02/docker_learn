@@ -29,8 +29,8 @@
   - COPY . .
       
     
--- You can see that these are much the same steps you might have taken to set up and install your app on your host. 
-   However, capturing these as a Dockerfile allows you to do the same thing inside a portable, isolated Docker image.
+> You can see that these are much the same steps you might have taken to set up and install your app on your host. 
+However, capturing these as a Dockerfile allows you to do the same thing inside a portable, isolated Docker image.
 
 -- The steps above built up the filesystem of our image, but there are other lines in your Dockerfile.
 
