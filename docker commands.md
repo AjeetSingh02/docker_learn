@@ -24,10 +24,18 @@
 
 * Run container having flask APP
 	* docker run -p localhost:5001:5000 image_id
+	* docker container run --publish 8000:8080 --detach --name containername imagename:tag
 	
 _localhost is not necessary. you can use 5001:5000 only also.
 -d detatches from the run. This means you won’t see any output. You can remove the -d if you would like to see the run process.
 -p which specifies the port it is going to run on_
+
+There are a couple of common flags here:
+
+--publish asks Docker to forward traffic incoming on the host’s port 8000, to the container’s port 8080. Containers have their own private set of ports, so if you want to reach one from the network, you have to forward traffic to it in this way. Otherwise, firewall rules will prevent all network traffic from reaching your container, as a default security posture.
+--detach asks Docker to run this container in the background.
+--name specifies a name with which you can refer to your container in subsequent commands, in this case bb.
+
 
 * Remove container
 	* docker rm 91f3410eca7a --force
