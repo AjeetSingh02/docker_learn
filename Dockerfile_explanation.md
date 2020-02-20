@@ -10,23 +10,21 @@
 **Step 3: Copy the file from your host to your current location**
 
 *COPY the file package.json from your host to the present location (.) in your image (so in this case, to /usr/src/app/package.json)*
-  - COPY package.json .
+> COPY package.json .
 
 **Step 4: Run the command inside your image filesystem**
 
 *RUN the command npm install inside your image filesystem (which will read package.json to determine your app’s node dependencies, and install them)*
-  - RUN npm install
+> RUN npm install
 
 **Step 5: Inform Docker that the container is listening on the specified port at runtime.**
-
-  - EXPOSE 8080
+> EXPOSE 8080
 
 **Step 6: Run the specified command within the container.**
-
-  - CMD [ "npm", "start" ]
+> CMD [ "npm", "start" ]
 
 **Step 7: Copy the rest of your app's source code from your host to your image filesystem.**
-  - COPY . .
+ > COPY . .
       
     
 > You can see that these are much the same steps you might have taken to set up and install your app on your host. 
