@@ -42,9 +42,9 @@
 	* docker rmi image_id/image_name --force
 
 * To push to Docker HUB
-	* Step1: Images must be namespaced correctly to share on Docker Hub. Specifically, you must name images like <Docker ID>/<Repository Name>:<tag>
+	* Step1: Images must be namespaced correctly to share on Docker Hub. Specifically, you must name images like this:
 		* docker image tag imagename:tag dockerid/repositoryname:tag
-	* Step2: push your image to Docker Hub
+	* Step2: Push your image to Docker Hub
 		* docker image push dockerid/repositoryname:tag
 	* For more info: https://docs.docker.com/get-started/part3/
 
