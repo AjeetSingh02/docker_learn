@@ -1,4 +1,4 @@
-some docker and flask commands
+# Some docker and flask commands #
 
 * To check docker version
 	* docker --version
