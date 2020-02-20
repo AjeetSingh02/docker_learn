@@ -1,10 +1,10 @@
 **Step 1: Use the official image as a parent image**
-- FROM node:current-slim
+> FROM node:current-slim
 
 **Step 2: Set the working directory**
 
 *Use WORKDIR to specify that all subsequent actions should be taken from the  directory /usr/src/app in your image filesystem (never the host’s filesystem)*
-- WORKDIR /usr/src/app
+> WORKDIR /usr/src/app
 
 
 **Step 3: Copy the file from your host to your current location**
