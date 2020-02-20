@@ -41,6 +41,6 @@ However, capturing these as a Dockerfile allows you to do the same thing inside 
 
 
 
-For more information: http://github.com
+For more information: https://docs.docker.com/get-started/part2/
 
 
