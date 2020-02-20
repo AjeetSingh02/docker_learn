@@ -27,10 +27,6 @@
  > COPY . .
       
     
-    
-    
-    
-    
 - You can see that these are much the same steps you might have taken to set up and install your app on your host. 
 However, capturing these as a Dockerfile allows you to do the same thing inside a portable, isolated Docker image.
 
@@ -42,4 +38,9 @@ However, capturing these as a Dockerfile allows you to do the same thing inside 
 - The EXPOSE 8080 informs Docker that the container is listening on port 8080 at runtime.
 
 - What you see above is a good way to organize a simple Dockerfile; always start with a FROM command, follow it with the steps to build up your private filesystem, and conclude with any metadata specifications. 
+
+
+
+http://github.com - automatic!
+[GitHub](http://github.com)
 
