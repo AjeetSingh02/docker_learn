@@ -1,4 +1,4 @@
-** Step 1: Use the official image as a parent image **
+**Step 1: Use the official image as a parent image**
 - FROM node:current-slim
 
 # Step 2: Set the working directory
