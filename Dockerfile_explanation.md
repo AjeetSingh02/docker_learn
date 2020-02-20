@@ -2,8 +2,7 @@
 - FROM node:current-slim
 
 **Step 2: Set the working directory**
-
-Use WORKDIR to specify that all subsequent actions should be taken from the  directory /usr/src/app in your image filesystem (never the host’s filesystem)
+*Use WORKDIR to specify that all subsequent actions should be taken from the  directory /usr/src/app in your image filesystem (never the host’s filesystem)*
 - WORKDIR /usr/src/app
 
 
