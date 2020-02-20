@@ -42,7 +42,9 @@
 	* docker rmi image_id/image_name --force
 
 * To push to Docker HUB
-	* https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html
+	* Step1: docker image tag imagename:tag dockerid/repositoryname:tag
+	* Step2: docker image push dockerid/repositoryname:tag
+		* For more info: https://docs.docker.com/get-started/part3/
 
 * To save as tar file
 	* docker save imagename > imagename.tar
