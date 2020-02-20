@@ -3,10 +3,10 @@ some docker and flask commands
 * To check docker version
 	* docker --version
 
-- To check all images
-docker image ls 
-docker image ls -a
-docker images
+* To check all images
+ * docker image ls 
+ * docker image ls -a
+ * docker images
 
 - To get inside running container
 docker exec -it b56fa0d76d5c bash
