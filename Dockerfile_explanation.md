@@ -28,16 +28,18 @@
       
     
     
+    
+    
+    
 - You can see that these are much the same steps you might have taken to set up and install your app on your host. 
 However, capturing these as a Dockerfile allows you to do the same thing inside a portable, isolated Docker image.
 
 - The steps above built up the filesystem of our image, but there are other lines in your Dockerfile.
 
-> The CMD directive is the first example of specifying some metadata in your image that describes how to run a container 
+- The CMD directive is the first example of specifying some metadata in your image that describes how to run a container 
    based on this image. In this case, it’s saying that the containerized process that this image is meant to support is npm start.
 
-> The EXPOSE 8080 informs Docker that the container is listening on port 8080 at runtime.
+- The EXPOSE 8080 informs Docker that the container is listening on port 8080 at runtime.
 
-> What you see above is a good way to organize a simple Dockerfile; always start with a FROM command, 
-   follow it with the steps to build up your private filesystem, and conclude with any metadata specifications. 
+- What you see above is a good way to organize a simple Dockerfile; always start with a FROM command, follow it with the steps to build up your private filesystem, and conclude with any metadata specifications. 
 
