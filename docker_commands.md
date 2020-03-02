@@ -46,3 +46,7 @@
 * Mount volume
 	* docker run -v /home/awb_user/ajeet/mount_volume:/workdir/mount -p 5053:5053 flaskapp:1
 	
+* Load from Tar
+	* docker load < imagename.tar.gz
+	* docker load --input imagename.tar.gz
+	
